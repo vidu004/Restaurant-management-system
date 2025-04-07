@@ -1,0 +1,18 @@
+<mat-nav-list appAccordion>
+  <ng-container *ngFor="let menuitem of menuItems.getMenuitem()">
+    <mat-list-item 
+      appAccordionLink 
+      routerLinkActive="selected" 
+      group="{{menuitem.state}}" 
+      style="background-color: #4d3718;"
+      *ngIf="menuitem.role === '' || menuitem.role === tokenPayload.role">  <!-- ✅ Apply *ngIf here -->
+
+      <a appAccordionToggle [routerLink]="['/cafe', menuitem.state]">
+        <mat-icon style="color: white;">{{menuitem.icon}}</mat-icon>
+        <span style="color: white;">{{menuitem.name}}</span>
+        <span fxFlex></span>
+      </a>
+
+    </mat-list-item>
+  </ng-container>
+</mat-nav-list>

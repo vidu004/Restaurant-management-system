@@ -1,0 +1,91 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    //background-color:#f1d9b2;
+  padding-left: 50px;  /* 👈 Here */
+  padding-right: 50px; /* 👈 And here */
+  margin-top: -20px;
+  }
+ 
+  .contact .banner {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .contact .banner .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #a2783a;
+  padding: 15px 0;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+  .contact .banner .item h4 {
+    font-weight: 300;
+    font-family: "Alex Brush", cursive;
+    font-size: 2rem;
+  }
+  .contact .banner .item p {
+    color: gray;
+  }
+  .contact .banner:last-child .item {
+    border: none;
+  }
+  .contact .banner:last-child .item form {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact .banner:last-child .item form div {
+    display: flex;
+    gap: 20px;
+  }
+  .contact .banner:last-child .item form div input {
+    flex: 1;
+  }
+  .contact .banner:last-child .item form h2 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  .contact .banner:last-child .item form input,
+  .contact .banner:last-child .item form textarea {
+    padding: 8px;
+    background: transparent;
+    border: 1px solid #a2783a;
+    border-radius: 7px;
+  }
+  .contact .banner:last-child .item form button {
+    padding: 10px 60px;
+    font-size: 24px;
+    color: #fff;
+    background: #a2783a;
+    font-weight: 300;
+    font-family: "Alex Brush", cursive;
+    border: none;
+    width: fit-content;
+  }
+  .contact .banner:last-child .item form input:focus,
+  .contact .banner:last-child .item form textarea:focus {
+    outline: none;
+  }
+  @media (max-width: 830px) {
+    .contact .banner {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 640px) {
+    .contact .banner:last-child .item form {
+      padding: 0;
+    }
+    .contact .banner:last-child .item form div {
+      flex-direction: column;
+    }
+  }
+  

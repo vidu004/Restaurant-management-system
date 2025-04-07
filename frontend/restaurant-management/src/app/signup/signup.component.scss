@@ -1,0 +1,29 @@
+/* @import '@angular/material/prebuilt-themes/indigo-pink.css'; */
+
+.mat-toolbar {
+    width: auto;
+    margin-bottom: 10px;
+    background-color: #a2783a;
+}
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.mat-form-field {
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+::ng-deep .mat-raised-button {
+    background-color: #a2783a !important;
+    color: white !important;
+  }
+  
+  ::ng-deep .mat-raised-button:hover {
+    background-color: #a2783a !important;
+  }
+  

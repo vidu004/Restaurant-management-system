@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - TasteBuds Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border: 1px solid red;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .date-time {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #a2783a;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #a2783a;
+            color: white;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            color: #a2783a;
+            text-align: right;
+            padding-top: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo and Date -->
+        <div class="header">
+            <img src="./tastebuds-high-resolution-logo(1).png" alt="TasteBuds Restaurant Logo" class="logo">
+            <div class="date-time">Date: <%= new Date().toLocaleString() %></div>
+        </div>
+
+        <h3>TasteBuds Restaurant</h3>
+
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td><%= name %></td>
+                <th>Email:</th>
+                <td><%= email %></td>
+            </tr>
+            <tr>
+                <th>Contact Number:</th>
+                <td><%= contactNumber %></td>
+                <th>Payment Method:</th>
+                <td><%= paymentMethod %></td>
+            </tr>
+        </table>
+
+        <h3>Product Details:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sub Total</th>
+            </tr>
+
+            <% if (Array.isArray(productDetails) && productDetails.length > 0) { %>
+                <% productDetails.forEach(function(product) { %>
+                    <tr>
+                        <td><%= product.name %></td>
+                        <td><%= product.category %></td>
+                        <td><%= product.quantity %></td>
+                        <td>Rs. <%= Number(product.price).toFixed(2) %></td>
+                        <td>Rs. <%= (Number(product.price) * Number(product.quantity)).toFixed(2) %></td>
+                    </tr>
+                <% }); %>
+            <% } else { %>
+                <tr>
+                    <td colspan="5" style="text-align: center; font-weight: bold;">No products available</td>
+                </tr>
+            <% } %>
+        </table>
+
+        <div class="total">Total: Rs. <%= totalAmount %></div>
+
+        <div class="footer">Thank You for Visiting. Please Come Again!!!</div>
+    </div>
+</body>
+</html>

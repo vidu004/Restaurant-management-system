@@ -1,0 +1,40 @@
+.title-center {
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Align text to the center */
+  }
+
+  mat-dialog-content {
+    background-color: white; /* Set the background color to white */
+    color: black; /* Optional: Set the text color to black for better contrast */
+    padding: 16px; /* Optional: Add padding for better spacing */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    
+   
+  }
+
+  #customers {
+  width: 100%; /* Optional: Make the table take the full width */
+  border-collapse: collapse; /* Ensure borders are collapsed for a clean look */
+  color: black;
+}
+
+#customers td, #customers th {
+  border: 1px solid black; /* Add a black border to table cells */
+  padding: 8px; /* Add padding inside the cells */
+  text-align: left; /* Align text to the left */
+}
+
+
+mat-card{
+    padding: 20px;
+}
+
+table{
+  width:100%;
+  background-color: white;
+}
+
+table th, table td {
+  color: black; /* Set table font color to black */
+}
+

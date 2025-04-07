@@ -1,0 +1,10 @@
+<div class="services container">
+    <h2>OUR CUISINES</h2>
+    <div class="banner">
+      <div class="item" *ngFor="let element of meals">
+        <h3>{{ element.title }}</h3>
+        <img [src]="element.url" [alt]="element.title" />
+      </div>
+    </div>
+  </div>
+  

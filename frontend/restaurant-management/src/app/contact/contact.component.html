@@ -1,0 +1,57 @@
+<div class="contact container">
+  <div class="banner">
+    <div class="item">
+      <h4>Address</h4>
+      <p>Union Place, Colombo 02</p>
+    </div>
+    <div class="item">
+      <h4>Call us</h4>
+      <p>Tel: +94 74 589 6321</p>
+    </div>
+    <div class="item">
+      <h4>Mail us</h4>
+      <p>tastebuds&#64;gmail.com</p>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="item">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954987.981182607!2d79.69535674999999!3d7.873054999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a5f807d617b%3A0x9b1e9e4f6f65a8c9!2sSri%20Lanka!5e0!3m2!1sen!2s!4v1709100567890!5m2!1sen!2s"
+        style="border: 0; width: 100%; height: 450px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="item">
+      <form [formGroup]="contactForm" (ngSubmit)="handleSendMessage()">
+        <h2>CONTACT</h2>
+        <div>
+          <input
+            type="text"
+            placeholder="Name"
+            formControlName="name"
+          />
+          <input
+            type="email"
+            placeholder="E-mail"
+            formControlName="email"
+          />
+        </div>
+        <input
+          type="text"
+          placeholder="Subject"
+          formControlName="subject"
+        />
+        <textarea
+          rows="10"
+          placeholder="Message"
+          formControlName="message">
+        </textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

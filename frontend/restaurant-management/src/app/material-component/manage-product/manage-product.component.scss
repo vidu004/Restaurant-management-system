@@ -1,0 +1,60 @@
+.white-card{
+    background-color: white;
+    width: 100%; /* Make the card take the full width of its container */
+  //max-width: 1200px; /* Optional: Limit the maximum width */
+  //margin: 20px auto; /* Center the card horizontally and add vertical spacing */
+  padding: 20px; /* Add padding inside the card */
+}
+
+.text{
+    color: black;
+}
+
+
+.custom-button{
+    background-color: #a2783a;
+    color: white;
+    padding: 10px 20px; /* Smaller padding = smaller button */
+    font-size: 12px;  /* Smaller text */
+    margin-left: auto; /* Push button to the right */
+    min-width: unset;
+    height: 40px; /* Adjust height if needed */
+    line-height: 24px; 
+    color: white;
+
+}
+
+mat-card{
+    background-color: white;
+    width: 100%; /* Set the card to take full width of its container */
+  //max-width: 1200px; /* Optional: Limit the maximum width */
+  margin: 20px auto; /* Center the card and add vertical spacing */
+  padding: 20px; /* Add padding inside the card */
+  box-sizing: border-box;
+}
+
+/*.float-right{
+    float:right;
+}*/
+
+
+  
+table{
+    width:100%;
+    background-color: white;
+   
+}
+
+table th, table td {
+    color: black; /* Set table font color to black */
+  }
+
+  mat-icon{
+    color: red;
+  }
+
+  mat-slide-toggle {
+    position: relative;
+    top: -5px;
+  }
+

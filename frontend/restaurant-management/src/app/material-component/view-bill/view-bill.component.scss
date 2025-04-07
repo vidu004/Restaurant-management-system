@@ -1,0 +1,21 @@
+mat-card{
+    background-color: white;
+    width: 100%; /* Set the card to take full width of its container */
+  //max-width: 1200px; /* Optional: Limit the maximum width */
+  margin: 20px auto; /* Center the card and add vertical spacing */
+  padding: 20px; /* Add padding inside the card */
+  box-sizing: border-box;
+  color: black;
+  padding-bottom: 30px;
+  
+}
+
+table{
+  width:100%;
+  background-color: white;
+}
+
+table th, table td {
+  color: black; /* Set table font color to black */
+}
+

@@ -1,0 +1,17 @@
+button[mat-menu-trigger-for] {
+  background-color: white; // Set button background to white
+  color: black; // Set icon color to black
+  border-radius: 50%; // Make the button circular
+  padding: 8px; // Add padding for better appearance
+  border: none; // Remove border
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Optional shadow for better visibility
+
+  &:hover {
+    background-color: #f0f0f0; // Lighten background on hover
+  }
+}
+
+mat-icon {
+  color: black; // Ensure the icon color is black
+  font-size: 24px; // Adjust icon size if necessary
+}

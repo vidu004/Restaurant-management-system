@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Cormorant+Garamond:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.footer {
+    padding: 30px 10px;
+    background: #000; /* Pure black background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .newsletter .title {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter .title .newsletter-logo {
+    height: 100px; /* Adjust the height for a smaller logo */
+    width: auto; /* Maintain aspect ratio */
+    //filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Add soft glow */
+    margin-bottom: 5px;
+  }
+  
+  .newsletter .title p {
+    //font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    color: #a2783a;
+    font-family: "Dancing Script", cursive;
+    //font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  .newsletter .tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    margin-top: 0;
+  }
+  
+  .newsletter .tag label {
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+    color: #fff;
+  }
+  
+  .newsletter .tag div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .newsletter .tag div input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .newsletter .tag div input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  .newsletter .tag div input:focus {
+    outline: none;
+    border-color: #a2783a; /* Beige border on focus */
+  }
+  
+  .newsletter .tag div button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    background: #a2783a; /* Beige button */
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter .tag div button:hover {
+    background: #d4a76a; /* Slightly lighter beige on hover */
+  }
+  
+  .newsletter .tag p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  @media (max-width: 500px) {
+    .newsletter .tag div {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .newsletter .tag p {
+    font-size: 18px; /* Keep the font size consistent */
+    font-family: "Cormorant Garamond", serif;
+    color: #fff;
+    margin-bottom: 5px; /* Reduce the bottom margin for the first paragraph */
+  }
+  
+  .newsletter .tag p:last-child {
+    margin-top: 0; /* Remove extra space above the second paragraph */
+    font-size: 18px; /* Optional: Slightly smaller font size for the copyright line */
+  }

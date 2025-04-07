@@ -1,0 +1,45 @@
+.main-container {
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Stack elements vertically
+  height: 100vh; // Full height of the viewport
+
+  .topbar {
+    display: flex; // Use flexbox for the toolbar
+    align-items: center; // Center items vertically
+    padding: 0 16px; // Add horizontal padding
+    background-color: #2a160c; // Updated background color for the toolbar
+    color: white; // Text color
+    justify-content: space-between; // Space between items
+
+    .navbar-header {
+      display: flex; // Use flexbox for the header
+      align-items: center; // Center items vertically
+
+      button {
+        margin-right: 16px; // Space between button and title
+      }
+    }
+
+    button[mat-menu-trigger-for] {
+      margin-left: auto; // Push the button to the right
+      color: #a2783a; // Set icon color to #8B0000
+    }
+  }
+
+  .example-sidenav-container {
+    display: flex; // Use flexbox for the sidenav container
+    flex: 1; // Allow the container to grow and fill available space
+
+    .dark-sidebar {
+      width: 250px; // Set width for the sidebar
+      background-color: #fbfcfd; // Dark background color
+      color: white; // Text color
+    }
+
+    .page-wrapper {
+      flex: 1; // Allow the content area to grow
+      padding: 16px; // Add padding around the content
+      background-color: #d0d2d3; // Light background color for the content
+    }
+  }
+}

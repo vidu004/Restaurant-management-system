@@ -1,0 +1,26 @@
+
+
+<div class="footer" id="signup">
+    <div class="newsletter">
+      <div class="title">
+        <img src="../../assets/img/tastebuds-high-resolution-logo-transparent (1).png" alt="Logo" class="newsletter-logo"/>
+        <p>Events and Weddings</p>
+      </div>
+      <div class="tag">
+        <label>Newsletter</label>
+        <form [formGroup]="newsletterForm" (ngSubmit)="handleSubscribe()">
+          <div>
+            <input
+              type="email"
+              placeholder="E-mail"
+              formControlName="email"
+              required
+            />
+            <button type="submit"><b>Subscribe</b></button>
+          </div>
+        </form>
+        <p>Sign up with your email address to receive the latest updates!</p>
+        <p>© 2025 Created by Viduni Jinadasa. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
